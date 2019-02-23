@@ -6,7 +6,7 @@ pipeline{
         stage('test'){
             steps{
             script{
-                sh "echo okkkkkk > test.txt "
+                bat "echo okkkkkk > test.txt "
             def loading = load 'test.groovy'
             loading.testing()
             }
